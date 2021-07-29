@@ -1,1 +1,139 @@
+<html>
+  <head>
+    <style>
+      html {
+  font-size: 10px;
+}
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', Arial;
+  font-size: 1.6rem;
+  line-height: 1.0;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 15px ;
+  margin-top: 0 ;
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+}
+#main {
+  margin: 20px 8px;
+  padding: 15px;
+  border-radius: 5px;
+  background: #eee;
+}
+
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+
+#headline {
+  margin: 20px 0;
+  text-align: center;
+}
+.submit-button {
+  width: 10%;
+  padding: 0.75rem;
+  background: rgb(93, 209, 255);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family:sans-serif;
+  border: none;
+}
+.img {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+}
+.form-group {
+  margin-top: 20px;
+}
+#contact-form {
+    background-color:#F2F7F9;
+    width:465px;
+    padding:20px;
+    margin: 20px auto;    
+    border: 6px solid #97A2FF;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    position:relative;
+}
+#contact-form input,
+#contact-form textarea, 
+#contact-form label {
+    font-size:15px;
+    width:450px;
+    border: 1px solid #97A2FF;
+    margin-bottom:10px;
+    padding:4px;
+}
+#contact-form textarea {
+    height:100px;
+    resize: none;
+}
+ 
+#contact-form label {
+    display:block;
+}
+#contact-form #submit-button {
+    width: 150px;
+    background-color:#97A2FF;
+    color:#FFF;
+    border:none;
+    display:block;
+    float:right;
+    margin-bottom:0px;
+    margin-right:6px;
+    -moz-border-radius:8px;
+}
+    </style>
+  </head>
+<main id="main"> 
+  <h1 id="title">Contact-Us</h1>
+  <div>
+      <img class="img" src="pict1.jpeg">
+  </div>
+    <p>
+    <h3 id="headline">Salsabilah Azahyrah Putri Alifia</h3>
+        Silahkan isi form di bawah ini untuk menghubungi Admin website. Admin akan mengirim balasan sebisa mungkin.
+      </p>
+      <div id="contact-form">
+    <form>
+        <label for="name">Nama: <span class="required"></span></label>
+        <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" autofocus="autofocus" /><br/>
+         
+        <label for="email">Email: <span class="required"></span></label>
+        <input type="email" id="email" name="email" value="" placeholder="email@example.com" required="required" /><br/>
+         
+        <label for="pesan">Pesan: <span class="required"></span></label>
+        <textarea id="pesan" name="pesan" required="required"></textarea><br/>
+         
+        <span id="loading"></span>
+        <input type="submit" value="Kirim" id="submit-button" />
+    </fieldset>
+    </form>
+</div>
+      <div class="form-group">
+        <a href="home.html"><button type="submit" id="home" class="submit-button">Home
+        </button></a>
+        <a href="about.html"><button type="submit" id="about" class="submit-button">About
+        </button></a>
+      </div>
+
+</main>
+</html>
